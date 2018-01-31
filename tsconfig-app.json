@@ -54,7 +54,6 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
 },
   "files": [
-    //"common.js",
     "system-production.src.js",
     "resize.ts",
     "tilespec.ts",

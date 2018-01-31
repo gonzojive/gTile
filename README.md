@@ -155,7 +155,17 @@ bazel run @yarn//:yarn
 
 ### Install
 
-bazel run :copy-to-extensions-folder
+If you have Bazel installed, build and run from source:
+
+```shell
+bazel build :install-extension && ./bazel-bin/install-extension
+```
+
+### Test
+
+```shell
+bazel test ...
+```
 
 
 ## Enjoy!
