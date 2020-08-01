@@ -5,6 +5,7 @@
     "license": "Apache 2.0",
     "dependencies": {},
     "devDependencies": {
+        "@babel/runtime": "^7.11.0",
         "@bazel/bazelisk": "latest",
         "@bazel/buildifier": "latest",
         "@bazel/ibazel": "latest",
@@ -28,6 +29,7 @@
         "mocha": "^8.1.0",
         "requirejs": "^2.3.6",
         "rollup": "^2.23.0",
+        "ts-gir": "^0.2.0",
         "typescript": "^3.9.7"
     },
     "scripts": {
