@@ -1,6 +1,7 @@
 load("@rules_pkg//pkg/private/tar:tar.bzl", "pkg_tar")
 load("@aspect_rules_ts//ts:defs.bzl", "ts_config", "ts_project")
 load("@aspect_rules_esbuild//esbuild:defs.bzl", "esbuild")
+load("@aspect_rules_rollup//rollup:defs.bzl", "rollup_bundle")
 load("@npm//:defs.bzl", "npm_link_all_packages")
 load(":execute.bzl", "concat")
 load("@jasmine//:defs.bzl", "jasmine_test")
@@ -206,8 +207,14 @@ jasmine_test(
 )
 
 esbuild(
-    name = "bundle",
+    name = "bundle_esbuild",
     entry_point = "entry.ts",
+    deps = [":entry_lib"],
+)
+
+rollup_bundle(
+    name = "bundle",
+    entry_point = "entry.js",
     deps = [":entry_lib"],
 )
 
