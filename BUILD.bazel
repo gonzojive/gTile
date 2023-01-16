@@ -22,6 +22,9 @@ ts_config(
     name = "tsconfig-app",
     src = "tsconfig-app.json",
     visibility = [":__subpackages__"],
+    deps = [
+      "tsconfig.json",
+    ]
 )
 
 ts_config(
