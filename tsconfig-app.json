@@ -6,5 +6,6 @@
 
     "strict": false,
     "downlevelIteration": true,
+    "declaration": true,
   }
 }
